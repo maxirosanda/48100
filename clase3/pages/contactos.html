@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li><a href="./ubicacion.html">Ubicación</a></li>
+            <li><a href="./contactos.html">Contactos</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Contactos</h1>
+    </header>
+    <main>
+        <form action="" method="get" id="form" >
+            <fieldset>
+                <legend>Info Personal</legend>
+            <label>
+                Nombre:
+                <input type="text" name="nombre" placeholder="Ingrese su Nombre" required >
+            </label>
+            <br>
+            <br>
+            <label>
+                Apellido:
+                <input type="text" name="apellido" placeholder="Ingrese su Apellido" required >
+            </label>    
+            <br>
+            <br>
+            <label>
+                Email
+                <input type="email" name="mail" id="" required>
+            </label>
+            <br>
+            <br>
+            <textarea name="mensaje" placeholder="ingrese un Mensaje"></textarea>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Sexo</legend>
+                <label>
+                    Hombre:
+                    <input type="radio" name="sexo" value="h" checked>
+                </label>
+                <label>
+                    Mujer:
+                    <input type="radio" name="sexo" value="m">
+                </label>
+                <label for="">
+                    No Binario
+                    <input type="radio" name="sexo" value="nb">
+                </label>
+            </fieldset>
+
+            <br>
+            <br>
+            <label for="">
+                Acepta terminos y condiciones
+                <input type="checkbox" name="acepto" id="" value="1" required>
+            </label>
+            <br>
+            <br>
+            <!--Estos son los talles-->
+            <select name="talle">
+                <option value="sm">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+        </form>
+    </main>
+    <aside>
+
+    </aside>
+    <footer>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Inicio*/
+nav{
+    padding: 10px;
+}
+
+main{
+    padding: 20px;
+}
+table{
+    border: solid 1px ;
+    border-collapse: collapse;
+    margin: 10px;
+}
+th,td{
+    border: solid 1px;
+    padding: 10px;
+}
+img{
+    width: 300px;
+}
+/* Contactos */
+form{
+    width: 50%;
+}
+textarea {
+    width: 250px;
+    height: 100px;
+}
+
+ol li{
+    color: red;
+}
+
+ol li ul li {
+    color: blue;
+}
+
+.fondoTurno{
+    background-color: blueviolet;
+}
+
+.colorTurno{
+    color: white;
+}
+
+.colorTitulo{
+    color: blue;
+}
+h1{
+    color: brown;
+    margin: 10px;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: start;
+    text-decoration:line-through;
+
+}
+
+
+.contenedorParrafos{
+    color: blue;
+}
+.parrafoColorRojo{
+    color: #F8180A;
+    background-color: #fff;
+}
+
+.parrafoColorRojo{
+    color: rgb(15, 122, 9);
+}
+.listaRoja{
+    list-style-type: none;
+}
+.listaRoja li{ color: red; }
+.card{
+    background-color: darksalmon;
+}
+.card p{
+    color: aqua;
+    padding: 10px;
+    line-height: 30px;
+}
+
+.imagenFondo{
+    background-image: url(../img/auto.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+}
+
+.fondoImagenChica{
+    background-image: url(../img/carChico.png);
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: 100px 150px;
+}
