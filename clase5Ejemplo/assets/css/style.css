@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodyConAside{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px 300px 1fr 100px;
+    grid-template-areas: "nav    nav    nav    nav"
+                         "header header header header"
+                         "main   main   main   aside"
+                         "footer footer footer footer";
+}
+@media(max-width:576px){
+    .bodyConAside{
+
+        grid-template-rows: 70px 200px auto auto 100px;
+        grid-template-areas: "nav    nav    nav    nav"
+                             "header header header header"
+                             "main   main   main   main"
+                             "aside aside   aside  aside"
+                             "footer footer footer footer";
+    }
+}
+
+.bodySinAside{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100px 300px 1fr 100px;
+    grid-template-areas: "nav    nav    nav    nav"
+                         "header header header header"
+                         "main   main   main   main"
+                         "footer footer footer footer";
+}
+.navegador{
+    grid-area: nav;
+    background-color:#0a1266 ;
+    padding: 20px;
+}
+.navegador .fa-bars{
+    display: none;
+}
+.navegador > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+}
+
+.navegador > ul > li{
+    position: relative;
+}
+
+.navegador > ul > li:hover ul{
+    display: block;
+}
+
+.navegador  ul  li  a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.navegador > ul >li > ul {
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    background-color: #0a1266;
+    left: -10px;
+    
+}
+@media(max-width:576px){
+    .navegador .fa-bars{
+        display: block;
+        color: white;
+        font-size: 36px;
+    }
+    .navegador > ul{
+        position: fixed;
+        top: 0;
+        left: -300px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding-top: 70px;
+        background-color: #0a1266;
+        width: 250px;
+        height: 100vh;
+        transition: 0.2s;
+    }
+    .navegador .fa-bars:hover + ul {
+       left: 0;
+    }
+    .navegador ul:hover{
+        left: 0;
+    }
+
+}
+.encabezado{
+    background-image: url(../img/piasaje.png);
+    background-size: cover;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.encabezado-info {
+    color: white;
+}
+
+main{
+    grid-area: main;
+}
+.btn{
+    margin-top: 10px;
+    padding: 5px 25px;
+    background-color: #121fb3 ;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.subtitulo {
+    margin: 10px;
+}
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tarjeta{
+    display: flex;
+    width: 350px;
+    gap: 10px;
+    margin: 10px;
+}
+.tarjeta img {
+    width: 120px;
+}
+
+aside{
+    grid-area: aside;
+}
+.publicidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.publicidad {
+    width: 150px;
+    height: 100px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+}
+.publicidad h4{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.582);
+    color: white;
+}
+
+.publicidad img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer{
+    grid-area: footer;
+    background-color: #121fb3;
+}
+
+.formulario{
+    background-color:#121fb3 ;
+    color: white;
+    padding: 30px;
+    margin-bottom: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 60px;
+    grid-template-areas:  " titulo    titulo"
+                          "nomApell  email"
+                          "tel       asunto"
+                          "mensaje   mensaje"
+                          "button    button";
+}
+
+.formulario h2{
+    grid-area: titulo;
+}
+
+.formulario label:nth-child(2){
+    grid-area: nomApell;
+}
+
+.formulario label:nth-child(3){
+    grid-area: email;
+}
+
+.formulario label:nth-child(4){
+    grid-area: tel;
+}
+.formulario label:nth-child(5){
+    grid-area:asunto;
+}
+.formulario label:nth-child(6){
+    grid-area:mensaje;
+}
+.formulario button:nth-child(7){
+    grid-area:button;
+}
+
+
+.formulario label {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formulario label input {
+    background-color:transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    margin-top: 10px;
+}

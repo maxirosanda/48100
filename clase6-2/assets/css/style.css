@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cajaPadre{
+    display: grid;
+    height: 500px;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 200px 200px;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: space-around;
+    align-content: space-between;
+}
+
+.cajaHijo1{
+    background-color: aqua;
+    justify-self: start;
+    align-self: center;
+}
+
+.cajaHijo2{
+    background-color: rgb(199, 216, 11);
+}
+
+.cajaHijo3{
+    background-color: rgb(29, 170, 104);
+}
+
+.cajaHijo4{
+    background-color: rgb(196, 13, 89);
+}

@@ -1,0 +1,47 @@
+
+
+.cajaPadre{
+    display: flex;
+    /*flex-direction: row;
+    flex-wrap: wrap;
+    */
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+
+
+}
+.cajaHijo {
+    padding: 10px;
+    color: white;
+}
+.cajaHijo1{
+    width: 300px;
+    background-color: blue;
+    order: 4;
+
+}
+
+.cajaHijo2{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    order: 3;
+}
+.cajaHijo3{
+    width: 250px;
+    background-color: brown;
+    order: 1;
+}
+
+.cajaHijo4{
+    width: 200px;
+    background-color: chocolate;
+    order: 2;
+}
+.cajaHijo5{
+    width: 200px;
+    background-color: chocolate;
+    order: 5;
+}
