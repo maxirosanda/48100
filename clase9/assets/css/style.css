@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+}
+.card{
+    width: 450px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    font-size: 20px;
+    margin: 30px;
+}
+.card img{
+    width: 100%;
+
+}
+.card button{
+    border: 0;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}

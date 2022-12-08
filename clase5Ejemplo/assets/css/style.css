@@ -234,3 +234,40 @@ footer{
     border-bottom: 1px solid white;
     margin-top: 10px;
 }
+
+.btn2{
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    position: relative;
+    z-index: 1;
+    margin: 10px;
+}
+.btn2 > i {
+    margin-left: 20px;
+}
+
+.btn2::before{
+    content: "";
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: red;
+    position: absolute;
+    z-index: -1;
+    left: 83px;
+    transform: translate(0,-50%);
+    top: 50%;
+    transition: width 0.25s ,left 0.25s 0.25s;
+
+}
+
+.btn2:hover::before{
+    left: 0;
+    width: 100%;
+    transition: left 0.25s , width 0.25s 0.25s;
+    
+
+
+}
