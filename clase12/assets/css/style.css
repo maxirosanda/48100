@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #333;
+}
+.topnav {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Topnav links */
+.topnav a {
+    color: #f2f2f2;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none }
+.labelMenu , .inputMenu{
+    display: none;
+}
+
+  @media screen and (max-width: 600px) {
+  .topnav {
+      max-height: 0;
+      flex-direction: column;
+      transition: 0.5s;
+      overflow: hidden;
+    }
+    .labelMenu{
+        display: block;
+        font-size: 23px;
+        color: white;
+        padding: 10px;
+    }
+    .inputMenu:checked + .topnav {
+        max-height: 500px;
+    }
+}
+
+.boton{
+    border: none;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 5px 7px 10px 0px rgba(0,0,0,0.75);
+}
+.boton:hover{
+    background-color: rgb(66, 65, 65);
+}
+
+.boton:visited{
+    background-color: red;
+}
+
+.boton:active{
+    box-shadow: 3px 4px 10px 0px rgba(0,0,0,0.75);
+}
+
+.caja{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    margin: 10px;
+}
+
+.cajaPrincipal{
+    background-color: brown;
+}
+
+.cajas div:not(.cajaPrincipal){
+    background-color: blueviolet;
+}
+.lista{
+    width: 100px;
+    margin: 10px;
+}
+.lista li:nth-child(2){
+    background-color: blueviolet;
+}
+.contenedor img:nth-of-type(1){
+    width: 20px;
+}
+
+#selec:checked + label {
+    color: blue;
+}
